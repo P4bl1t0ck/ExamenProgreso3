@@ -40,5 +40,13 @@
             Placeholder="Ingrese la calificación"
             Text="{Binding Calificacion}" />
 
+        <Button
+            Text="Insertar Película"
+            Command="{Binding InsertarPeliculaCommand}" />
+
+        <Button
+            Text="Mostrar Todas las Películas"
+            Command="{Binding GetAllPeliculasCommand}" />
+        
     </VerticalStackLayout>
 </ContentPage>

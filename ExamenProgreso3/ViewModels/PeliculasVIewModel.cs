@@ -4,10 +4,12 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Collections.ObjectModel;
+using System.Windows.Input;
 
 namespace ExamenProgreso3.ViewModels
 {
-    internal class PeliculasVIewModel: INotifyPropertyChanged
+    internal class PeliculasVIewModel : INotifyPropertyChanged
     {
         private string _titulo;
         private string _genero;
@@ -51,9 +53,9 @@ namespace ExamenProgreso3.ViewModels
             get => _calificacion;
             set 
             {
-                if (value < 3) // Corrige la validación para usar el valor entrante
+                if (value >3) // Corrige la validación para usar el valor entrante
                 {
-                    throw new ArgumentOutOfRangeException(nameof(Calificacion), "La calificación no puede ser menor a 3.");
+                    throw new ArgumentOutOfRangeException(nameof(Calificacion), "la calificacion no puede ser 3.");
                 }
                 _calificacion = value;
                 OnPropertyChanged(nameof(Calificacion));
