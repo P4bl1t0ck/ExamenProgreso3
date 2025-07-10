@@ -12,7 +12,8 @@ namespace ExamenProgreso3.ViewModels
         private string _titulo;
         private string _genero;
         private int _anio;
-        private int _calificacion;  
+        private int _calificacion = 3; // Inicializa con valor válido
+
         public string Titulo
         {
             get => _titulo;
@@ -36,7 +37,7 @@ namespace ExamenProgreso3.ViewModels
             get => _anio;
             set
             {
-                if (_anio < 2024) 
+                if (value > 2024)
                 { // Validación para que el año no sea mayor a 2024
                     throw new ArgumentOutOfRangeException(nameof(Anio), "El año no puede ser mayor a 2024.");
                 }
@@ -50,7 +51,7 @@ namespace ExamenProgreso3.ViewModels
             get => _calificacion;
             set 
             {
-                if (_calificacion < 3) 
+                if (value < 3) // Corrige la validación para usar el valor entrante
                 {
                     throw new ArgumentOutOfRangeException(nameof(Calificacion), "La calificación no puede ser menor a 3.");
                 }

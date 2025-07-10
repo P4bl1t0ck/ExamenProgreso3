@@ -15,34 +15,30 @@
         <Label
            Text="Titulo" />
         <Entry
-            x:Name="Peliculas"
+            x:Name="TituloEntry"
             Placeholder="Ingrese el titulo"
-            Text="{Binding Titulo}"
-            />
+            Text="{Binding Titulo}" />
 
         <Label
             Text="Genero" />
         <Entry
-            x:Name="Peliculas"
-            Placeholder="Ingrese el titulo"
-            Text="{Binding Genero}"
-                            />
+            x:Name="GeneroEntry"
+            Placeholder="Ingrese el género"
+            Text="{Binding Genero}" />
 
         <Label
             Text="Anio" />
         <Entry
-            x:Name="Anio"
-            Placeholder="Ingrese el titulo"
-            Text="{Binding Anio}"
-                    />
+            x:Name="AnioEntry"
+            Placeholder="Ingrese el año"
+            Text="{Binding Anio}" />
         
         <Label
             Text="Calficacion" />
         <Entry
-            x:Name="Peliculas"
-            Placeholder="Ingrese el titulo"
-            Text="{Binding Calificacion}"
-                    />
+            x:Name="CalificacionEntry"
+            Placeholder="Ingrese la calificación"
+            Text="{Binding Calificacion}" />
 
     </VerticalStackLayout>
 </ContentPage>
