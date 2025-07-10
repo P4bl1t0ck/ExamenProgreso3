@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ExamenProgreso3.ViewModels"
+             x:Class="ExamenProgreso3.Views.Pelicias"
+             Title="Pelicias">
+    <ContentPage.BindingContext>
+        <local:PeliculasVIewModel/>
+    </ContentPage.BindingContext>
+    <VerticalStackLayout Spacing="20">
+        <Image Source="dotnet_bot.png"
+               HeightRequest="150"
+               Aspect="AspectFill"
+               SemanticProperties.Description="robot de dotnet."/>
+        <Label
+           Text="Titulo" />
+        <Entry
+            x:Name="Peliculas"
+            Placeholder="Ingrese el titulo"
+            Text="{Binding Titulo}"
+            />
+
+        <Label
+            Text="Genero" />
+        <Entry
+            x:Name="Peliculas"
+            Placeholder="Ingrese el titulo"
+            Text="{Binding Genero}"
+                            />
+
+        <Label
+            Text="Anio" />
+        <Entry
+            x:Name="Anio"
+            Placeholder="Ingrese el titulo"
+            Text="{Binding Anio}"
+                    />
+        
+        <Label
+            Text="Calficacion" />
+        <Entry
+            x:Name="Peliculas"
+            Placeholder="Ingrese el titulo"
+            Text="{Binding Calificacion}"
+                    />
+
+    </VerticalStackLayout>
+</ContentPage>
